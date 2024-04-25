@@ -16,58 +16,96 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <header class="l-header">
-        <button class="l-header__btn">Menu</button>
-        <!-- メニュー
-        <nav class="l-header__nav">
-            <ul class="l-header__menu">
-                <li class="l-header__item">バーガー</li>
-                <ul class="l-header__subMenu">
-                    <li class="l-header__subItem">ハンバーガー</li>
-                    <li class="l-header__subItem">チーズバーガー</li>
-                    <li class="l-header__subItem">テリヤキバーガー</li>
-                    <li class="l-header__subItem">アボカドバーガー</li>
-                    <li class="l-header__subItem">フィッシュバーガー</li>
-                    <li class="l-header__subItem">ベーコンバーガー</li>
-                    <li class="l-header__subItem">チキンバーガー</li>
-                </ul>
-                <li class="l-header__item">サイド</li>
-                <ul class="l-header__subMenu">
-                    <li class="l-header__subItem">ポテト</li>
-                    <li class="l-header__subItem">サラダ</li>
-                    <li class="l-header__subItem">ナゲット</li>
-                    <li class="l-header__subItem">コーン</li>
-                </ul>
-                <li class="l-header__item">ドリンク</li>
-                <ul>
-                    <li class="l-header__subItem">コーラ</li>
-                    <li class="l-header__subItem">ファンタ</li>
-                    <li class="l-header__subItem">オレンジ</li>
-                    <li class="l-header__subItem">アップル</li>
-                    <li class="l-header__subItem">紅茶（Ice/Hot）</li>
-                    <li class="l-header__subItem">コーヒー（Ice/Hot）</li>
-                </ul>
-            </ul>
-        </nav>
--->
-        <div class="l-header__inner">
-            <div class="l-header__logo">
-                <a href="/">
-                    <p>Hamburger</p>
-                </a>
-            </div>
-            <div class="l-header__search">
-                <input type="search" class="l-header__searchBox"></input>
-                <button class="l-header__searchBtn">検索</button>
-            </div>
+    <div class="l-wrapper">
+        <div class="l-wrapper__inner">
+            <div class="headerContainer"></div>
+            <script>header('./');</script>
+            <main class="l-main">
+                <article class="l-contents">
+                    <section class="p-fv-front">
+                        <h2 class="p-fv-front__title c-title">ダミーサイト</h2>
+                    </section>
+                    <div class="p-menu">
+                        <div class="p-menu__inner">
+                            <div class="p-menu__takeOut">
+                                <section class="p-menu__wrapper">
+                                    <h2 class="p-menu__title">Take Out</h2>
+                                    <span class="p-menu__line c-line"></span>
+                                </section>
+                                <div class="p-menu__contents">
+                                    <a class="p-menu__link" href="/">
+                                        <dl class="p-menu__container">
+                                            <dt class="p-menu__subtitle c-title">Take Out</dt>
+                                            <dd class="p-menu__text">
+                                                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                    <a class="p-menu__link" href="/">
+                                        <dl class="p-menu__container">
+                                            <dt class="p-menu__subtitle c-title">Take Out</dt>
+                                            <dd class="p-menu__text">
+                                                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-menu__eatIn">
+                                <section class="p-menu__wrapper">
+                                    <h2 class="p-menu__title">Eat In</h2>
+                                    <span class="p-menu__line c-line"></span>
+                                </section>
+                                <div class="p-menu__contents">
+                                    <a class="p-menu__link" href="/">
+                                        <dl class="p-menu__container">
+                                            <dt class="p-menu__subtitle c-title">Eat In</dt>
+                                            <dd class="p-menu__text">
+                                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                    <a class="p-menu__link" href="/">
+                                        <dl class="p-menu__container">
+                                            <dt class="p-menu__subtitle c-title">Eat In</dt>
+                                            <dd class="p-menu__text">
+                                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-location">
+                        <div class="p-location__wrapper">
+                            <iframe class="p-location__map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7940.257969910845!2d24.947603155802344!3d60.163111194369456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920ba1bee8b043%3A0x5a6617ba9d4a124b!2sHesburger%20Helsinki%20Mannerheimintie%208!5e0!3m2!1sja!2sjp!4v1713953867062!5m2!1sja!2sjp"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="p-location__overlay"></div>
+                        </div>
+                        <section class="p-location__container">
+                            <h2 class="p-location__title c-title">見出しが入ります</h2>
+                            <span class="p-location__line c-line"></span>
+                            <p class="p-location__text">
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </section>
+                    </div>
+                </article>
+            </main>
         </div>
-    </header>
-    <main class="l-main">
-
-    </main>
+        <div class="sidebarContainer"></div>
+        <script>sidebar('./');</script>
+    </div>
+    <div class="footerContainer"></div>
+    <script>footer('./');</script>
 </body>
 
 </html>

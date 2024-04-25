@@ -1,0 +1,42 @@
+@use "../global/index" as *;
+
+.p-pagenation {
+    &__contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__count {
+        color: $secondary-color;
+        padding-right: 15px;
+    }
+
+    &__prev {
+        color: $secondary-color;
+        padding-right: 15px;
+    }
+
+    &__pages {
+        display: flex;
+    }
+
+    &__item {
+        border: 1px solid $secondary-color;
+        width: 35px;
+        height: 35px;
+        color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item:not(:last-of-type) {
+        margin-right: 15px;
+    }
+
+    &__item:first-child {
+        background-color: $primary-color;
+        color: white;
+    }
+}

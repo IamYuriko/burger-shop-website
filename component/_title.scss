@@ -1,0 +1,5 @@
+@use "../global/index" as *;
+
+.c-title {
+    @include primary-bold;
+}

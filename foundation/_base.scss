@@ -1,8 +1,25 @@
+@use "../global/index" as *;
+
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
+}
+
+* {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 body {
+    font-size: 1.6rem;
     line-height: 1.7;
-    list-style-type: none;
+    @include primary-normal;
+    color: $primary-color;
+}
+
+iframe {
+    vertical-align: bottom;
+}
+
+img {
+    vertical-align: bottom;
 }

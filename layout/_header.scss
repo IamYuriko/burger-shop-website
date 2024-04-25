@@ -1,24 +1,35 @@
-@use "../foundation/variable" as v;
-@use "../foundation/mixin" as m;
+@use "../global/index" as *;
 
 .l-header {
-    background-color: v.$background-pink;
+    background-color: $bg-header;
     width: 100%;
-    height: 215px;
+    height: 214px;
 
-    &__btn {
-        font-size: 2rem;
+    &__inner {
+        width: 100%;
+        max-width: 1553px;
+        height: 100%;
+        margin: auto 0;
     }
 
-    &__inner {}
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5rem;
+    }
 
-    &__logo {}
+    &__logo {
+        padding-left: 4.063rem;
+    }
 
-    &__search {}
+    &__link {
+        @include secondary-bold;
+        font-size: 6.4rem;
+        color: $secondary-color;
 
-    &__searchBox {}
-
-    &__searchBtn {
-        border: 1px solid v.$grey;
+        &:hover {
+            opacity: .7;
+        }
     }
 }

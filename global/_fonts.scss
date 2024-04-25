@@ -1,0 +1,19 @@
+// fonts
+
+@mixin primary-bold($weight: 700) {
+    font-family: "M PLUS 1p",
+        sans-serif;
+    font-weight: $weight;
+}
+
+@mixin primary-normal($weight: 400) {
+    font-family: "M PLUS 1p",
+        sans-serif;
+    font-weight: $weight;
+}
+
+@mixin secondary-bold($weight: 700) {
+    font-family: "Roboto",
+        sans-serif;
+    font-weight: $weight;
+}

@@ -1,0 +1,62 @@
+@use "../global/index" as *;
+
+.p-location {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    min-height: 650px;
+    display: block;
+
+    &__wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    &__map {
+        width: 100%;
+        height: auto;
+        min-height: 650px;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: $map-overlay;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        width: 55%;
+        height: 100%;
+        background-color: $map-overlay;
+        padding: 86px 134px 75px 119px;
+    }
+
+    &__title {
+        color: white;
+        padding-bottom: 30px;
+        font-size: 3.6rem;
+    }
+
+    &__line {
+        width: 75px;
+        height: 2px;
+        background-color: white;
+        color: white;
+        margin-bottom: 58.5px;
+    }
+
+    &__text {
+        color: white;
+        line-height: 3.3;
+        height: auto;
+        @include primary-bold;
+        padding-bottom: 75x;
+    }
+}

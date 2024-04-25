@@ -1,0 +1,14 @@
+@use "../global/index" as *;
+
+.l-wrapper {
+    width: 100vw;
+    display: flex;
+
+    &__inner {
+        width: 80vw;
+    }
+}
+
+.l-main {
+    background-color: $bg-main;
+}

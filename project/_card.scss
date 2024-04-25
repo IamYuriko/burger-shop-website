@@ -1,0 +1,49 @@
+@use "../global/index" as *;
+
+.p-card {
+    &__contents {
+        display: flex;
+    }
+
+    &__image {
+        min-width: 471px;
+    }
+
+    &__container {
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: white;
+    }
+
+    &__subtitle {
+        color: white;
+    }
+
+    &__text {
+        height: auto;
+        color: white;
+    }
+
+    &__button {
+        max-width: 100%;
+        width: 292px;
+        height: auto;
+        border-radius: 60px;
+        background-color: white;
+        @include primary-bold;
+        padding: 20px 0;
+        color: $secondary-color;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
