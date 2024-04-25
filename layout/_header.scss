@@ -1,0 +1,24 @@
+@use "../foundation/variable" as v;
+@use "../foundation/mixin" as m;
+
+.l-header {
+    background-color: v.$background-pink;
+    width: 100%;
+    height: 215px;
+
+    &__btn {
+        font-size: 2rem;
+    }
+
+    &__inner {}
+
+    &__logo {}
+
+    &__search {}
+
+    &__searchBox {}
+
+    &__searchBtn {
+        border: 1px solid v.$grey;
+    }
+}
