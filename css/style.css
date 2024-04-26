@@ -203,38 +203,30 @@ img {
 .p-location {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-height: 650px;
-  display: block;
-}
-.p-location__wrapper {
-  width: 100%;
   height: auto;
 }
 .p-location__map {
   width: 100%;
   height: auto;
-  min-height: 650px;
+  aspect-ratio: 16/9;
 }
 .p-location__overlay {
   position: absolute;
   top: 0;
+  left: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .p-location__container {
   position: absolute;
   top: 0;
   left: 0;
-  color: white;
   width: 55%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 86px 134px 75px 119px;
+  color: white;
 }
 .p-location__title {
   color: white;
@@ -251,39 +243,11 @@ img {
 .p-location__text {
   color: white;
   line-height: 3.3;
-  height: auto;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
-  padding-bottom: 75x;
+  height: auto;
 }
 
-/*
-    &__overlay {
-        width: 100%;
-        height: 100%;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-
-        }
-    }
-
-    &__contents {
-
-    }
-
-
-}
-
-iframe {
-    min-height: 650px;
-    width: 100%;
-    height: auto;
-}
-*/
 .p-gnav {
   width: 100%;
   height: 100%;
@@ -595,46 +559,5 @@ iframe {
 .p-intro__title {
   font-size: 3.6rem;
   padding-bottom: 20px;
-}
-
-.u-color--primary {
-  color: #3C2A10;
-}
-
-.u-color--secondary {
-  color: #707070;
-}
-
-.u-color--white {
-  color: white;
-}
-
-.u-marign-bottom__high {
-  margin-bottom: 7rem;
-}
-
-.u-marign-bottom__row {
-  margin-bottom: 5rem;
-}
-
-.u-marign-bottom__card {
-  margin-bottom: 4rem;
-}
-
-.u-padding__td--narrow {
-  padding: 5px 200px 5px 10px;
-}
-
-.u-padding__td--wide {
-  padding: 5px 600px 5px 10px;
-}
-
-.u-padding-left__gnav {
-  padding-left: 4rem;
-}
-
-.u-font-secondaryBold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
