@@ -199,34 +199,32 @@ img {
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
+.c-grid__location {
+  grid-template-columns: 1fr;
+}
 
 .p-location {
-  position: relative;
   width: 100%;
-  height: auto;
-}
-.p-location__map {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-.p-location__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 .p-location__container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 55%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 86px 134px 75px 119px;
   color: white;
+  grid-area: 1/1;
+}
+.p-location__overlay {
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.p-location__map {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
 }
 .p-location__title {
   color: white;
