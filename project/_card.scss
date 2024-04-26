@@ -1,12 +1,17 @@
 @use "../global/index" as *;
 
 .p-card {
+    &:not(:last-of-type) {
+        padding-bottom: 30px;
+    }
+
     &__contents {
         display: flex;
     }
 
     &__image {
-        min-width: 471px;
+        min-width: 677px;
+        height: auto;
     }
 
     &__container {
@@ -14,19 +19,24 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        padding: 56px 104px 60px 63px;
+        height: auto;
     }
 
     &__title {
         color: white;
+        padding-bottom: 44px;
     }
 
     &__subtitle {
         color: white;
+        padding-bottom: 13px;
     }
 
     &__text {
         height: auto;
         color: white;
+        padding-bottom: 60px;
     }
 
     &__button {
