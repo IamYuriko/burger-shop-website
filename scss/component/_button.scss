@@ -1,0 +1,11 @@
+@use "../foundation/global" as *;
+
+
+.c-button {
+    max-width: 100%;
+
+    &__text {
+        @include secondary-bold;
+        text-align: center;
+    }
+}

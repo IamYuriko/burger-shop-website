@@ -36,3 +36,16 @@ function sidebar(rootDir) {
         }
     });
 }
+
+function headerArchive(rootDir) {
+    $.ajax({
+        url: rootDir + "../include/headerArchive.html",
+        cache: false,
+        async: false,
+        dataType: 'html',
+        success: function (html) {
+            html = html.replace(/\{\$root\}/g, rootDir);
+            $(".headerArchiveContainer").html(html);
+        }
+    });
+}

@@ -1,0 +1,27 @@
+@use "../foundation/global" as *;
+
+.l-wrapper {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+
+    &__inner {
+        width: 80vw;
+        height: 100%;
+    }
+}
+
+.l-main {
+    background-color: $bg-main;
+}
+
+.l-contents {
+
+    &--first {
+        margin: 0 7.5rem;
+    }
+
+    &--subsequent {
+        margin: 0 6.25rem;
+    }
+}

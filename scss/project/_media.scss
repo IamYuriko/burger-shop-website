@@ -1,0 +1,15 @@
+@use "../foundation/global" as *;
+
+.p-media {
+    max-width: 100%;
+    margin-bottom: 60px;
+
+    &__image {
+        width: 581px;
+        height: auto;
+    }
+
+    &__text {
+        height: auto;
+    }
+}

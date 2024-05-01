@@ -1,0 +1,15 @@
+.p-orderedList {
+    margin-bottom: 56px;
+
+    &__item {
+        list-style-type: decimal !important;
+    }
+
+    &__list:not(:last-child) {
+        padding-bottom: 17px;
+    }
+
+    &__list:nth-child(2) {
+        padding-left: 2rem;
+    }
+}

@@ -1,0 +1,18 @@
+@use "../foundation/global" as *;
+
+.l-sidebar {
+    background-color: $bg-gnav;
+    width: 20vw;
+    height: 100vh;
+    min-height: 100%;
+
+    &__inner {
+        padding: 84px 121px 0 46px;
+    }
+
+    &__title {
+        font-size: 3.4rem;
+        padding-bottom: 90px;
+        color: $primary-color;
+    }
+}
