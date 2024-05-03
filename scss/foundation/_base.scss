@@ -1,13 +1,7 @@
 @use "../foundation/global" as *;
 
-
 html {
     font-size: 62.5%;
-}
-
-* {
-    list-style-type: none;
-    text-decoration: none;
 }
 
 body {
@@ -23,4 +17,12 @@ iframe {
 
 img {
     vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }

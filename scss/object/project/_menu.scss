@@ -1,0 +1,72 @@
+@use "../../foundation/global" as *;
+
+//FrontページのTake Out/Eat in
+
+.p-menu {
+    margin-bottom: 130px;
+
+    &__inner {
+        gap: 5rem;
+    }
+
+    &__takeOut {
+        background-image: url(../images/pc-menu-take-out_front@2x.jpg);
+        width: 100%;
+        height: auto;
+        min-height: 1197px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        padding-top: 26px;
+        padding-left: 11px;
+    }
+
+    &__title {
+        font-size: 8rem;
+        color: white;
+        padding-bottom: 41px;
+    }
+
+    &__line {
+        border-color: white;
+        border-width: 4px;
+        width: 63px;
+    }
+
+    &__link {
+        color: $secondary-color;
+    }
+
+    &__container {
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 0 20px 20px 20px;
+        height: auto;
+        padding: 14px 20px;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+        padding-bottom: 18px;
+    }
+
+    &__text {
+        height: auto;
+    }
+
+    &__eatIn {
+        background-image: url(../images/pc-menu-eat-in_front@2x.jpg);
+        width: 100%;
+        height: auto;
+        min-height: 1197px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

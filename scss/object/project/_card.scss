@@ -1,0 +1,54 @@
+@use "../../foundation/global" as *;
+
+.p-card {
+    &:not(:last-child) {
+        margin-bottom: 1.875rem;
+    }
+
+    &:last-child {
+        margin-bottom: 150px;
+    }
+
+    &__image {
+        max-width: 50.074%;
+        height: auto;
+    }
+
+    &__container {
+        background-color: $secondary-color;
+    }
+
+    &__wrapper {
+        padding: 56px 6.5rem 60px 3.938rem;
+    }
+
+    &__title {
+        color: white;
+        padding-bottom: 41px;
+        font-size: 3.6rem;
+    }
+
+    &__subtitle {
+        color: white;
+        padding-bottom: 16px;
+        font-size: 2.4rem;
+    }
+
+    &__text {
+        color: white;
+        height: auto;
+    }
+
+    &__button {
+        background-color: white;
+        color: $primary-color;
+        border-radius: 60px;
+        display: block;
+        margin: 0 11.188rem 60px 12.813rem;
+        padding: 23px 6.625rem 20px 6.625rem;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}

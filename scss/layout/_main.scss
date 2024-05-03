@@ -8,6 +8,10 @@
     &__inner {
         width: 80vw;
         height: 100%;
+
+        @include breakpoint(m) {
+            width: 100vw;
+        }
     }
 }
 

@@ -1,10 +1,6 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
-}
-
-* {
-  list-style-type: none;
-  text-decoration: none;
 }
 
 body {
@@ -23,10 +19,19 @@ img {
   vertical-align: bottom;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 .l-header {
   background-color: #FFF7EF;
   width: 100%;
   height: 214px;
+  position: relative;
 }
 .l-header__inner {
   padding: 5rem 1.938rem 0 4.063rem;
@@ -38,6 +43,21 @@ img {
 .l-header__link:hover {
   opacity: 0.7;
 }
+.l-header__button {
+  font-size: 3.4rem;
+  color: #707070;
+  position: absolute;
+  top: 20px;
+  right: 1.563rem;
+  /*以下は画面幅が1024px以上になったら適応される*/
+  /*以下は画面幅が375px~1024pxまでの間で適応される*/
+  /*以下は画面幅が375px以下になったら適応される*/
+}
+@media (min-width: 1024px) {
+  .l-header__button {
+    display: none;
+  }
+}
 
 .l-wrapper {
   width: 100vw;
@@ -47,6 +67,14 @@ img {
 .l-wrapper__inner {
   width: 80vw;
   height: 100%;
+  /*以下は画面幅が1024px以上になったら適応される*/
+  /*以下は画面幅が375px~1024pxまでの間で適応される*/
+  /*以下は画面幅が375px以下になったら適応される*/
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .l-wrapper__inner {
+    width: 100vw;
+  }
 }
 
 .l-main {
@@ -65,6 +93,9 @@ img {
   width: 20vw;
   height: 100vh;
   min-height: 100%;
+  /*以下は画面幅が1024px以上になったら適応される*/
+  /*以下は画面幅が375px~1024pxまでの間で適応される*/
+  /*以下は画面幅が375px以下になったら適応される*/
 }
 .l-sidebar__inner {
   padding: 84px 121px 0 46px;
@@ -73,6 +104,11 @@ img {
   font-size: 3.4rem;
   padding-bottom: 90px;
   color: #707070;
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .l-sidebar {
+    display: none;
+  }
 }
 
 .l-footer {
@@ -167,6 +203,17 @@ img {
   background-size: cover;
 }
 
+.c-undisplay {
+  /*以下は画面幅が1024px以上になったら適応される*/
+  /*以下は画面幅が375px~1024pxまでの間で適応される*/
+  /*以下は画面幅が375px以下になったら適応される*/
+}
+@media (min-width: 1024px) {
+  .c-undisplay {
+    display: none;
+  }
+}
+
 .p-location {
   width: 100%;
   height: 100%;
@@ -212,7 +259,7 @@ img {
   border-color: white;
   border-width: 2px;
   width: 75px;
-  padding-bottom: 58.5px;
+  margin-bottom: 58.5px;
 }
 .p-location__text {
   color: white;
@@ -220,32 +267,40 @@ img {
   height: auto;
 }
 
-.p-gnav {
+.p-sideMenu {
   width: 100%;
+  /*以下は画面幅が1024px以上になったら適応される*/
+  /*以下は画面幅が375px~1024pxまでの間で適応される*/
+  /*以下は画面幅が375px以下になったら適応される*/
 }
-.p-gnav__menu {
+.p-sideMenu__menu {
   white-space: nowrap;
 }
-.p-gnav__list {
+.p-sideMenu__list {
   font-size: 2.4rem;
   color: #707070;
   padding-bottom: 32px;
 }
-.p-gnav__list:not(:first-child) {
+.p-sideMenu__list:not(:first-child) {
   padding-top: 48px;
 }
-.p-gnav__item {
+.p-sideMenu__item {
   font-size: 2rem;
   padding-left: 20px;
 }
-.p-gnav__item:not(:last-child) {
+.p-sideMenu__item:not(:last-child) {
   padding-bottom: 20px;
 }
-.p-gnav__link {
+.p-sideMenu__link {
   color: #707070;
 }
-.p-gnav__link:hover {
+.p-sideMenu__link:hover {
   opacity: 0.7;
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+  .p-sideMenu {
+    display: none;
+  }
 }
 
 .p-pagenation {
@@ -427,23 +482,6 @@ img {
   padding-left: 19px;
 }
 
-.p-fv-single {
-  background-image: url(../images/pc-mv_single@2x.jpg);
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-  position: relative;
-  margin-bottom: 63px;
-}
-.p-fv-single__title {
-  position: absolute;
-  top: 50%;
-  left: 5.34%;
-  transform: translate(-5.34%, -50%);
-  color: white;
-  font-size: 6rem;
-}
-
 .p-fv-page {
   background-image: url(../images/pc-mv_page@2x.jpg);
   width: 100%;
@@ -453,6 +491,23 @@ img {
   margin-bottom: 61px;
 }
 .p-fv-page__title {
+  position: absolute;
+  top: 50%;
+  left: 5.34%;
+  transform: translate(-5.34%, -50%);
+  color: white;
+  font-size: 6rem;
+}
+
+.p-fv-single {
+  background-image: url(../images/pc-mv_single@2x.jpg);
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  margin-bottom: 63px;
+}
+.p-fv-single__title {
   position: absolute;
   top: 50%;
   left: 5.34%;
@@ -588,10 +643,10 @@ img {
   margin-bottom: 60px;
 }
 .p-table__row {
-  border: 1px solid #3C2A10;
+  border: 1px solid #707070;
 }
 .p-table__column {
-  border: 1px solid #3C2A10;
+  border: 1px solid #707070;
   color: #3C2A10;
   white-space: nowrap;
   padding-left: 1.875rem;
@@ -638,14 +693,14 @@ img {
   margin-bottom: 61px;
 }
 .p-quote__link {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .p-orderedList {
   margin-bottom: 56px;
 }
 .p-orderedList__item {
-  list-style-type: decimal !important;
+  list-style-type: decimal;
 }
 .p-orderedList__list:not(:last-child) {
   padding-bottom: 17px;

@@ -18,5 +18,28 @@
     font-weight: $weight;
 }
 
+//breakpoints
 
-//responsive
+@mixin breakpoint($point) {
+
+    /*以下は画面幅が1024px以上になったら適応される*/
+    @if $point==l {
+        @media (min-width:1024px) {
+            @content ;
+        }
+    }
+
+    /*以下は画面幅が375px~1024pxまでの間で適応される*/
+    @if $point==m {
+        @media (min-width:375px) and (max-width: 1024px) {
+            @content ;
+        }
+    }
+
+    /*以下は画面幅が375px以下になったら適応される*/
+    @if $point==s {
+        @media (max-width: 375px) {
+            @content ;
+        }
+    }
+}

@@ -1,7 +1,0 @@
-@use "../foundation/global" as *;
-
-.p-gallery {
-    gap: 1.25rem;
-    margin-bottom: 54px;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-}
