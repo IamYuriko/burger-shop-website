@@ -1,6 +1,7 @@
 @use "../../foundation/global" as *;
 
-//mr=margin-right
-.u-mr40px {
-    margin-right: 40px;
+.u-mb117px {
+    @include breakpoint(m) {
+        margin-bottom: 117px;
+    }
 }

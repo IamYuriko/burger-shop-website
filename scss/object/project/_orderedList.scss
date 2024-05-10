@@ -1,5 +1,8 @@
+//single、pageのリスト（箇条書き）
+
 .p-orderedList {
     margin-bottom: 56px;
+    list-style-position: inside;
 
     &__item {
         list-style-type: decimal;

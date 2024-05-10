@@ -7,13 +7,12 @@
     height: 100%;
 
     &__overlay {
-        grid-area: 1 / 1;
         width: 100%;
         height: 100%;
 
         &::before {
             content: "";
-            background-color: $map-overlay;
+            background-color: $map-overlay02;
             width: 100%;
             height: 100%;
             display: block;
@@ -27,37 +26,56 @@
         width: 100%;
         height: 100%;
         aspect-ratio: 16/9;
-        grid-area: 1 / 1;
     }
 
     &__container {
         width: 70%;
         height: auto;
-        background-color: $map-overlay;
+        background-color: $map-overlay01;
         padding: 86px 134px 75px 119px;
         color: white;
-        grid-area: 1 / 1;
         z-index: 3;
         position: relative;
         pointer-events: none;
+
+        @include breakpoint(m) {
+            width: 100%;
+            height: 100%;
+            padding: 42px 1.813rem 40px 2.625rem;
+            font-size: 1.4rem;
+        }
+
+        @include breakpoint(s) {
+            width: 100%;
+            height: 60%;
+        }
     }
 
     &__title {
-        color: white;
         padding-bottom: 50.5px;
-        font-size: 3.6rem;
+
+        @include breakpoint(m) {
+            padding-bottom: 15px;
+            font-size: 3rem;
+        }
     }
 
     &__line {
-        border-color: white;
-        border-width: 2px;
-        width: 75px;
         margin-bottom: 58.5px;
+        width: 75px;
+
+        @include breakpoint(m) {
+            margin-bottom: 14px;
+        }
     }
 
     &__text {
         color: white;
         line-height: 3.3;
         height: auto;
+
+        @include breakpoint(m) {
+            font-size: 1.4rem;
+        }
     }
 }

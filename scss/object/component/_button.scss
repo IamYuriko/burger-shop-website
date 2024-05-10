@@ -1,10 +1,30 @@
 @use "../../foundation/global" as *;
 
 .c-button {
-    max-width: 100%;
+    @include secondary-bold;
+    text-align: center;
+    border: 1px solid $primary-color;
+    background: $button-gradient;
+    display: inline-block;
 
-    &__text {
-        @include secondary-bold;
-        text-align: center;
+    &--search {
+        border-radius: 10px;
+        color: $primary-color;
+        width: 136px;
+        height: 46px;
+
+        @include breakpoint(s) {
+            width: 90px;
+        }
+    }
+
+    &--large {
+        border-radius: 20px;
+        color: $secondary-color;
+        padding: 2.5rem 15rem;
+
+        &:hover {
+            opacity: .8;
+        }
     }
 }

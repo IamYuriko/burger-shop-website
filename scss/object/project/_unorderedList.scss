@@ -1,5 +1,13 @@
+@use "../../foundation/global" as *;
+
+//single、pageのリスト（箇条書きなし）
+
 .p-unorderedList {
     margin-bottom: 57px;
+
+    @include breakpoint(s) {
+        margin-bottom: 26px;
+    }
 
     &__list:not(:last-child) {
         padding-bottom: 17px;

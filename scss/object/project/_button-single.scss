@@ -1,17 +1,11 @@
 @use "../../foundation/global" as *;
 
-.p-button-single {
-    border: 1px solid $primary-color;
-    color: $secondary-color;
-    border-radius: 20px;
-    width: 429px;
-    height: 104px;
-    max-width: 100%;
-    margin-bottom: 61px;
-    background: $button-gradient;
-    @include secondary-bold;
+//single, pageのボタン
 
-    &:hover {
-        opacity: .8;
+.p-button-single {
+    margin-bottom: 61px;
+
+    @include breakpoint(s) {
+        margin-bottom: 31px;
     }
 }

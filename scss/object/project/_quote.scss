@@ -1,12 +1,17 @@
 @use "../../foundation/global" as *;
 
+//single、pageの引用箇所
+
 .p-quote {
-    background-color: $bg-container;
+    background-color: $bg-quote;
     padding: 50px 60px 47px 50px;
-    max-width: 100%;
     min-height: 319px;
     height: auto;
     margin-bottom: 60px;
+
+    @include breakpoint(s) {
+        margin-bottom: 30px;
+    }
 
     &__text {
         height: auto;

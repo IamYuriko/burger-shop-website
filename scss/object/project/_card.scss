@@ -1,54 +1,78 @@
 @use "../../foundation/global" as *;
 
+//archive, archive-searchにある左にハンバーガーの写真、右に見出し等がある箇所
+
 .p-card {
     &:not(:last-child) {
         margin-bottom: 1.875rem;
+
+        @include breakpoint(m) {
+            margin-bottom: 1.281rem;
+        }
+
+        @include breakpoint(s) {
+            margin-bottom: 1.305rem;
+        }
     }
 
     &:last-child {
         margin-bottom: 150px;
+
+        @include breakpoint(m) {
+            margin-bottom: 106.5px;
+        }
+
+        @include breakpoint(s) {
+            margin-bottom: 71.55px;
+        }
     }
 
-    &__image {
-        max-width: 50.074%;
-        height: auto;
+    &__contents {
+        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     }
 
     &__container {
-        background-color: $secondary-color;
-    }
-
-    &__wrapper {
-        padding: 56px 6.5rem 60px 3.938rem;
+        background-color: $container-card;
+        text-align: center;
+        padding: 3.75rem 3.938rem;
     }
 
     &__title {
         color: white;
+        text-align: left;
         padding-bottom: 41px;
-        font-size: 3.6rem;
+
+        @include breakpoint(m) {
+            font-size: 2rem;
+        }
+
+        @include breakpoint(s) {
+            padding-bottom: 21px;
+        }
     }
 
     &__subtitle {
         color: white;
+        text-align: left;
         padding-bottom: 16px;
-        font-size: 2.4rem;
+
+        @include breakpoint(m) {
+            font-size: unset;
+        }
+
+        @include breakpoint(s) {
+            padding-bottom: 7px;
+        }
     }
 
     &__text {
         color: white;
         height: auto;
-    }
+        text-align: left;
+        padding-bottom: 60px;
 
-    &__button {
-        background-color: white;
-        color: $primary-color;
-        border-radius: 60px;
-        display: block;
-        margin: 0 11.188rem 60px 12.813rem;
-        padding: 23px 6.625rem 20px 6.625rem;
-
-        &:hover {
-            color: $secondary-color;
+        @include breakpoint(s) {
+            padding-bottom: 40px;
         }
     }
 }

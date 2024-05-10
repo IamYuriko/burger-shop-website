@@ -2,17 +2,20 @@
 
 <header class="l-header">
     <div class="l-header__inner">
-        <!-- ハンバーガメニュー用ボタン -->
-        <button class="l-header__button c-title">Menu</button>
         <div class="l-header__contents c-flex c-flex--center-between">
-            <h1 class="l-header__logo">
-                <a class="l-header__link c-title" href="/">Hamburger</a>
+            <!-- ハンバーガメニュー用ボタン -->
+            <button class="l-header__openBtn c-title c-title--s u-hide--pc">Menu</button>
+            <h1 class="l-header__logo c-title c-title--l">
+                <a class="l-header__link" href="/">Hamburger</a>
             </h1>
-            <form class="p-search c-flex">
-                <div class="p-search__searchBox c-heading">
-                    <label><input type="text" class="p-search__input c-heading"></input></label>
+            <form action="" method="" class="p-searchForm c-flex">
+                <div class="c-searchBox">
+                    <label>
+                        <input type="search" name="search-form" class="c-input c-heading"></label>
                 </div>
-                <label><input type="button" value="検索" class="p-search__button c-button c-button__text"></input></label>
+                <label>
+                    <input type="submit" name="search-button" value="検索"
+                        class="p-searchForm__button c-button c-button--search"></label>
             </form>
         </div>
     </div>

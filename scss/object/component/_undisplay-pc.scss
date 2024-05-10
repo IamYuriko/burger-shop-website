@@ -1,9 +1,0 @@
-@use "../../foundation/global" as *;
-
-// PCで非表示
-
-.c-undisplay {
-    @include breakpoint(l) {
-        display: none;
-    }
-}
