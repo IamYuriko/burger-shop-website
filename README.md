@@ -1,2 +1,2 @@
-RaiseTechの最終課題です。
-This is the final task at RaiseTech.
+RaiseTechの最終課題の静的サイトです。
+
